@@ -1,7 +1,5 @@
 package IfElsePractice;
-
 import java.util.Scanner;
-
 public class Practice1 {
 	    public void PN(int n) {
 	    	if(n==0) {
@@ -15,11 +13,85 @@ public class Practice1 {
 	    	}
 	    }
 	    
+	    public void evenOdd(int n) {
+	    	if(n%2==0) {
+	    		System.out.println("Number is even");
+	    	}
+	    	else {
+	    		System.out.println("Number is odd");
+	    	}
+	    }
 	    
+	    public void largestOfTwo(int num1,int  num2) {
+	    	if(num1>num2) {
+	    		System.out.println("Num1 is greater");
+	    	}
+	    	else {
+	    		System.out.println("Num2 is greater");
+	    	}
+	    }
+	    
+	   public void eligibleToVote(int age) {
+		   if(age>18) {
+			   System.out.println("Eligible to vote");
+		   }
+		   else {
+			   System.out.println("Does not eligible to vote");
+		   }
+	   }
+	   
+	   public void divisibleBy5And11(int n) {
+		   if(n%5==0 && n%11==0) {
+			   System.out.println("Divisle by 5 and 11");
+		   }
+		   else {
+			   System.out.println("Not divisible by 5 and 11");
+		   }
+	   }
+	   
+	   public void largestOfThreeNumbers(int num1 , int num2 , int num3) {
+		   if(num1>num2 && num1>num3) {
+			   System.out.println("Num1 is larger");
+		   }
+		   else if(num2>num1 && num2>num3) {
+			   System.out.println("Num2 is larger");
+		   }
+		   else {
+			   System.out.println("Num3 is larger");
+		   }
+	   }
+	   
+	   public void leapYear(int year) {
+		   if((year%4==0 && year%400==0) && year%100!=0 ) {
+			   System.out.println("Year is leap year");
+		   }
+		   else {
+			   System.out.println("Year is not leap year");
+		   }
+	   }
+	   
+	   
        public static void main(String[] args) {
     	   Scanner sc = new Scanner(System.in);
     	   int n = sc.nextInt();
     	   Practice1 p = new Practice1();
     	   p.PN(n);	
+    	   p.evenOdd(n);
+    	   p.divisibleBy5And11(n);
+    	   
+    	   char ch = sc.next().charAt(0);
+    	   
+    	   if(ch>='A' && ch<='Z') {
+    		   System.out.println("Upper case");
+    	   }
+    	   else if(ch>='a' && ch<='z') {
+    		   System.out.println("Lower case");
+    	   }
+    	   else if(ch>='0' && ch<='9') {
+    		   System.out.println("Character is digit");
+    	   }
+    	   else {
+    		   System.out.println("Special character");
+    	   }
 	}
 }

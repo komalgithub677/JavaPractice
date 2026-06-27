@@ -1,0 +1,25 @@
+package IfElsePractice;
+
+import java.util.Scanner;
+
+public class Practice1 {
+	    public void PN(int n) {
+	    	if(n==0) {
+	    		System.out.println("Number is zero");
+	    	}
+	    	else if(n>0) {
+	    		System.out.println("Number is positive ");
+	    	}
+	    	else {
+	    		System.out.println("Number is negative");
+	    	}
+	    }
+	    
+	    
+       public static void main(String[] args) {
+    	   Scanner sc = new Scanner(System.in);
+    	   int n = sc.nextInt();
+    	   Practice1 p = new Practice1();
+    	   p.PN(n);	
+	}
+}
