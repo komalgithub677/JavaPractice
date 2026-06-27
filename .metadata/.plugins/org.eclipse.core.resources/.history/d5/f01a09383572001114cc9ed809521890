@@ -62,15 +62,6 @@ public class Practice3 {
             	  
             	 }
              }
-             
-             public void checkCharacterisAlphabet(char ch) {
-            	     if((ch>='A'|| ch<='Z') &&(ch>='a' || ch<='z') ) {
-            	    	 System.out.println("Character is alphabet");
-            	     }
-            	     else {
-            	    	 System.out.println("Character is digit");
-            	     }
-             }
              public static void main(String[] args) {
             	 Practice3 p3 = new Practice3();
             	 p3.dayOfWeek();
