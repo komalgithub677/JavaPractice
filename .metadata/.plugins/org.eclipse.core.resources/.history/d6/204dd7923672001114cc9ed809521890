@@ -79,6 +79,7 @@ public class Practice3 {
             	    else {
             	    	System.out.println("Number is not three digit");
             	    }
+ 
              }
              public static void main(String[] args) {
             	 Practice3 p3 = new Practice3();

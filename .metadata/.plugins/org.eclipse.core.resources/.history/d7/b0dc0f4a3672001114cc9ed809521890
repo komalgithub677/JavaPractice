@@ -73,12 +73,7 @@ public class Practice3 {
              }
              
              public void threeDigitNumber(int num) {
-            	    if(num>=100 && num<=999) {
-            	    	System.out.println("Number is three digit");
-            	    }
-            	    else {
-            	    	System.out.println("Number is not three digit");
-            	    }
+            	    
              }
              public static void main(String[] args) {
             	 Practice3 p3 = new Practice3();
