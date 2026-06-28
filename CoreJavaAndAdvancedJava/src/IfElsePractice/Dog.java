@@ -1,0 +1,23 @@
+package IfElsePractice;
+
+public class Dog implements Animal {
+
+	@Override
+	public void sound() {
+		System.out.println("Dogs bark");	
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("Dogs eat meal");
+		
+	}
+	
+
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		d.sound();
+		d.eat();
+		
+	}
+}
