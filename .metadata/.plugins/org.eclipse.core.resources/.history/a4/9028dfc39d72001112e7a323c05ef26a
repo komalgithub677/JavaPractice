@@ -1,0 +1,20 @@
+package IfElsePractice;
+
+public class Student {
+//	Create a Student class with fields:
+//
+	int id;
+	String name;
+	
+//		id
+//		name
+//		marks
+
+		
+	
+	
+       public static void main(String[] args) {
+		Student s = new Student();
+		
+	}
+}

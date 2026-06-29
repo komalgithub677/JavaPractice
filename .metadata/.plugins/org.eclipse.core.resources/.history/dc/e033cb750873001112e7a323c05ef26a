@@ -1,0 +1,15 @@
+package IfElsePractice;
+
+public class Person {
+        String name;
+        String color;
+        String city;
+		public Person(String name, String color, String city) {
+			super();
+			this.name = name;
+			this.color = color;
+			this.city = city;
+		}
+        
+        
+}

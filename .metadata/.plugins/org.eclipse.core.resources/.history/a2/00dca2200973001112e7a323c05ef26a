@@ -1,0 +1,24 @@
+package IfElsePractice;
+
+public class Person {
+        String name;
+        String color;
+        String city;
+        
+		public Person(String name, String color, String city) {
+			super();
+			this.name = name;
+			this.color = color;
+			this.city = city;
+		}
+		
+		public void display() {
+			System.out.println("Name :" + name);
+			System.out.println("Color : " + color);
+			System.out.println("City : " + city);
+		}
+		
+		
+        
+        
+}

@@ -1,0 +1,11 @@
+package IfElsePractice;
+
+public class Car extends Vehicle {
+
+	@Override
+	void start() {
+		System.out.println("Start method of the vechile class");
+		
+	}
+
+}

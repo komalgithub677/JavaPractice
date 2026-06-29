@@ -1,0 +1,49 @@
+package IfElsePractice;
+
+import java.util.Scanner;
+
+public class Practice4 {
+//	Print numbers from 1 to 10.
+	public void printNumbers1To10() {
+		for(int i=1; i<=10; i++) {
+			System.out.println(i);
+		}
+	}
+//	Print numbers from 10 to 1.
+	
+	public void oneHTo1() {
+		for(int i=100; i>=1; i++) {
+			System.out.println(i);
+		}
+	}
+//	Print all even numbers from 1 to 100.
+	public void even() {
+		for(int i=1; i<=100; i++) {
+			if(i%2==0) {
+				System.out.println(i);
+			}
+		}
+	}
+//	Print all odd numbers from 1 to 100.
+	public void odd() {
+		for(int i=1; i<=100; i++) {
+			if(i%2!=0) {
+				System.out.println(i);
+			}
+		}
+	}
+//	Print the multiplication table of a given number.
+	public void multiplicationTable(int n) {
+		for(int i=1; i<=10; i++) {
+			int table= n *i;
+			System.out.println(table);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		Practice4 p = new Practice4();
+		p.multiplicationTable(0);
+	}
+}

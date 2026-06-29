@@ -1,0 +1,25 @@
+package IfElsePractice;
+
+public class TraverseCharacter {
+//	1. Traverse Character by Character
+//
+//	Use when you need to count, search, or compare characters.
+//
+//	Approach:
+//
+//	for(int i = 0; i < str.length(); i++){
+//	    char ch = str.charAt(i);
+//	}
+//
+//	Used for:
+//
+//	Count vowels
+//	Count consonants
+//	Count digits
+//	Count uppercase/lowercase
+//	Find frequency of a character
+	
+	public static void main(String[] args) {
+		
+	}
+}
