@@ -24,10 +24,42 @@ public class TraverseCharacter {
 		}
 	}
 	
+	public void countDigits(String s) {
+		int count=0;
+		for(int i=0; i<s.length(); i++) {
+			char ch = s.charAt(i);
+			if(Character.isDigit(ch)) {
+				count++;
+			}
+		}
+		System.out.println("Count of characters : " + count);
+	}
+	
+	//using ascii value
+	public void countDigits1(String s) {
+		   int count =0;
+		   for(int i=0; i<s.length(); i++) {
+			   
+		   }
+	}
+	
+	public void countUpperCase(String s ) {
+		int count =0;
+		
+		for(int i=0; i<s.length(); i++) {
+			char ch = s.charAt(i);
+			if(Character.isUpperCase(ch)) {
+				count++;
+			}
+		}
+		System.out.println("Count of the uppercase character" + count);
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		TraverseCharacter t = new TraverseCharacter();
-		t.countVowels(s);	
+		t.countVowels(s);
+		t.countDigits(s);
 	}
 }
