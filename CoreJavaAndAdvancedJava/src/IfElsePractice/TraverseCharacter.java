@@ -55,11 +55,37 @@ public class TraverseCharacter {
 		System.out.println("Count of the uppercase character" + count);
 	}
 	
+	public void frequencyOfCharacter(String s ) {
+		   int count =0;
+		   char target = 'a';
+		   for(int i=0; i<s.length(); i++) {
+			   char ch = s.charAt(i);
+			   if(ch ==target) {
+				   count++;
+			   }
+		   }
+		   
+		   System.out.println("Frequecy of character :" + count);
+	}
+	
+	public void palindrome(String s) {
+		    String reverse = " " ;
+		   for(int i=0; i<s.length(); i=i/10) {
+			   char ch = s.charAt(i);
+			   reverse += ch;
+		   }
+		   
+		   System.out.println("String reverse : " + reverse);
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
+		
 		TraverseCharacter t = new TraverseCharacter();
 		t.countVowels(s);
 		t.countDigits(s);
+		t.countUpperCase(s);
+		t.frequencyOfCharacter(s);
 	}
 }
