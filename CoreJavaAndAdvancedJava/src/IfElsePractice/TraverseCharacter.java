@@ -69,13 +69,54 @@ public class TraverseCharacter {
 	}
 	
 	public void palindrome(String s) {
+		    String original =s;
 		    String reverse = " " ;
 		   for(int i=0; i<s.length(); i=i/10) {
 			   char ch = s.charAt(i);
 			   reverse += ch;
 		   }
-		   
-		   System.out.println("String reverse : " + reverse);
+		   if(reverse.equals(original)) {
+			   System.out.println("String is palindrome");
+		   }
+		   else {
+			   System.out.println("String is not palindrome");
+		   }	 
+	}
+	
+	public void reverseString(String s) {
+		char []arr = s.toCharArray();
+		int start =0;
+		int end = arr.length-1;
+		
+		while(start<=end) {
+			char temp = arr[start];
+			arr[start] =arr[end];
+			arr[end] = temp;
+			start++;
+			end--;
+		}
+		
+		System.out.println(new String(arr));
+	}
+	
+	public void checkPalindrome(String s) {
+		       int left = 0;
+		       int right = s.length()-1;
+		       boolean isPalindrome = true;
+		       while(left<right) {
+		    	     if(s.charAt(left)!=s.charAt(right)) {
+		    	    	 isPalindrome = false;
+		    	    	 break;
+		    	     }
+		    	     left++;
+		    	     right--;
+		       }
+		       if(isPalindrome) {
+		    	   System.out.println("String is palindrome");
+		       }
+		       else {
+		    	   System.out.println("String is not plaindrome");
+		       }
 	}
 	
 	public static void main(String[] args) {
@@ -87,5 +128,7 @@ public class TraverseCharacter {
 		t.countDigits(s);
 		t.countUpperCase(s);
 		t.frequencyOfCharacter(s);
+		t.reverseString(s);
+		t.checkPalindrome(s);
 	}
 }
